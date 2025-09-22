@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		327D7B69240CEF2F00B9C368 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B68240CEF2F00B9C368 /* UIBarButtonItem+Extensions.swift */; };
 		4500082B3B62CA66D64563BC /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8856E5E414FCD9DBEA165EA9 /* Pods_Example.framework */; };
 		8458057421819B95004F241C /* YPImagePickerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C6D6991F1FB5C100711DB2 /* YPImagePickerLocalizable.strings */; };
+		93A8A8C02E81747500B28844 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 93A8A8BF2E81747500B28844 /* Stevia */; };
 		99019E4C2018CCD6007325C2 /* YPBottomPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99019E4B2018CCD6007325C2 /* YPBottomPagerView.swift */; };
 		99019E4E2018CD31007325C2 /* YPPagerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99019E4D2018CD31007325C2 /* YPPagerMenu.swift */; };
 		99019E512018CDED007325C2 /* YPImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99019E502018CDED007325C2 /* YPImageSize.swift */; };
@@ -183,7 +184,6 @@
 		EBA37BC726F75151005DAAD4 /* YPImagePickerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C6D6991F1FB5C100711DB2 /* YPImagePickerLocalizable.strings */; };
 		EBA37BC926F757FF005DAAD4 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA37BC826F757FF005DAAD4 /* Bundle+Extensions.swift */; };
 		EBA37BCA26F757FF005DAAD4 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA37BC826F757FF005DAAD4 /* Bundle+Extensions.swift */; };
-		EBA37BCD26F75BCC005DAAD4 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = EBA37BCC26F75BCC005DAAD4 /* Stevia */; };
 		EBA37BD026F75C67005DAAD4 /* PryntTrimmerView in Frameworks */ = {isa = PBXBuildFile; productRef = EBA37BCF26F75C67005DAAD4 /* PryntTrimmerView */; };
 		EBB0FF7A20877A7500C84E25 /* YPVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0FF7920877A7500C84E25 /* YPVideoView.swift */; };
 		EBD2B641207B7D7400E711C2 /* YPMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B640207B7D7400E711C2 /* YPMediaItem.swift */; };
@@ -345,6 +345,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A8A8C02E81747500B28844 /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +353,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBA37BCD26F75BCC005DAAD4 /* Stevia in Frameworks */,
 				EBA37BD026F75C67005DAAD4 /* PryntTrimmerView in Frameworks */,
 				4500082B3B62CA66D64563BC /* Pods_Example.framework in Frameworks */,
 			);
@@ -699,7 +699,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				EBA37BCC26F75BCC005DAAD4 /* Stevia */,
 				EBA37BCF26F75C67005DAAD4 /* PryntTrimmerView */,
 			);
 			productName = YPIPExample;
@@ -763,8 +762,8 @@
 			);
 			mainGroup = 52412A891CA6114A0073C4BE;
 			packageReferences = (
-				EBA37BCB26F75BCC005DAAD4 /* XCRemoteSwiftPackageReference "Stevia" */,
 				EBA37BCE26F75C67005DAAD4 /* XCRemoteSwiftPackageReference "PryntTrimmerView" */,
+				93A8A8BE2E81747500B28844 /* XCRemoteSwiftPackageReference "Stevia" */,
 			);
 			productRefGroup = 52412A941CA6114A0073C4BE /* Products */;
 			projectDirPath = "";
@@ -1382,12 +1381,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EBA37BCB26F75BCC005DAAD4 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+		93A8A8BE2E81747500B28844 /* XCRemoteSwiftPackageReference "Stevia" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/freshOS/Stevia";
+			repositoryURL = "https://github.com/freshOS/Stevia.git";
 			requirement = {
-				kind = exactVersion;
-				version = 5.1.2;
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.2;
 			};
 		};
 		EBA37BCE26F75C67005DAAD4 /* XCRemoteSwiftPackageReference "PryntTrimmerView" */ = {
@@ -1401,9 +1400,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EBA37BCC26F75BCC005DAAD4 /* Stevia */ = {
+		93A8A8BF2E81747500B28844 /* Stevia */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EBA37BCB26F75BCC005DAAD4 /* XCRemoteSwiftPackageReference "Stevia" */;
+			package = 93A8A8BE2E81747500B28844 /* XCRemoteSwiftPackageReference "Stevia" */;
 			productName = Stevia;
 		};
 		EBA37BCF26F75C67005DAAD4 /* PryntTrimmerView */ = {
